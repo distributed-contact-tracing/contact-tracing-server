@@ -23,5 +23,5 @@
       "name": "res"
     }
   ],
-  "scriptFile": "../dist/getContactEvents/index.js"
+  "scriptFile": "../dist/getContagiousEvents/index.js"
 }

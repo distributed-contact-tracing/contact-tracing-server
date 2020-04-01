@@ -4,11 +4,11 @@ A server to manage traffic for Distributed Contact Tracing
 
 ## API
 
-### Get Contact Events
+### Get Contagious Events
 
 #### Request
 
-`GET /api/getContactEvents/{region}/{timestampFrom}`
+`GET /api/getContagiousEvents/{region}/{timestampFrom}`
 
 | Parameter       | Type     |
 | --------------- | -------- |
