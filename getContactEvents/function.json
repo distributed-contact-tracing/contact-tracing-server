@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "authLevel": "anonymous",
+      "methods": ["get"],
+      "route": "getContactEvents/{region}/{timestampFrom}"
+    },
+    {
+      "name": "contactEvents",
+      "direction": "in",
+      "type": "cosmosDB",
+      "databaseName": "db1",
+      "collectionName": "contactEvents",
+      "sqlQuery": "SELECT c.events FROM c WHERE c.region = {region}",
+      "connectionStringSetting": "COSMOSDB_CONNECTION_STRING"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ],
+  "scriptFile": "../dist/getContactEvents/index.js"
+}
