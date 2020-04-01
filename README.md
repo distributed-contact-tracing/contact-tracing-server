@@ -31,7 +31,7 @@ Returns status `204` if result is empty.
 interface ContagiousEventDocument {
   id: string;
   timestamp: number;
-  region: Region;
-  hashedEvent: Array<HashedEvent>;
+  region: string;
+  hashedEvent: Array<string>;
 }
 ```
