@@ -10,6 +10,7 @@
     "start": "npm-run-all --parallel start:host watch",
     "test": "echo \"No tests yet...\""
   },
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "@azure/functions": "^1.0.1-beta1",
